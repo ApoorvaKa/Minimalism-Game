@@ -13,6 +13,7 @@ func _process(delta):
 	var velocity = Vector2.ZERO
 	if Input.is_action_just_released("click"):
 		velocity.y -= power;
+		power = 0
 	if Input.is_action_pressed("click"):
 		power += 1
 		
