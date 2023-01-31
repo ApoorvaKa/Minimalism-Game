@@ -9,21 +9,10 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	var velocity = Vector2.ZERO # set velocity to (0,0)
+func _process(_delta):
 	if Input.is_action_just_pressed("gravity_flip"):
 		if position.y > 500:
 			position.y = 82
 		else:
 			position.y = 523
-	
-	velocity.x += 1
-		
-	if velocity.length() > 0:
-		velocity = velocity.normalized() * speed
-		
-	# handles the movement of the player
-	position += velocity * delta
-	position.x = clamp(position.x, 0, screen_size.x) # clamp to keep it within the screen
-	position.y = clamp(position.y, 0, screen_size.y)
 	
