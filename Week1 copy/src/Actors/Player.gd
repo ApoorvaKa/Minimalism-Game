@@ -4,7 +4,6 @@ func _on_EnemyDetector_body_entered(body: PhysicsBody2D) -> void:
 	queue_free()
 
 var screen_size
-var power = 0
 
 func _ready(): 
 	screen_size = get_viewport_rect().size
