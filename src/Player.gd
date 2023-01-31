@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var speed = 350 
+export var speed = 100 
 var screen_size
 var power = 0
 # Called when the node enters the scene tree for the first time.
@@ -13,9 +13,9 @@ func _process(delta):
 	var velocity = Vector2.ZERO # set velocity to (0,0)
 	if Input.is_action_just_pressed("gravity_flip"):
 		if position.y > 500:
-			position.y = 135
+			position.y = 82
 		else:
-			position.y = 475
+			position.y = 523
 	
 	velocity.x += 1
 		
