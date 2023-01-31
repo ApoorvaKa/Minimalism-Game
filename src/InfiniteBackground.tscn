@@ -9,7 +9,7 @@
 [node name="InfiniteBackground" type="ParallaxBackground"]
 script = ExtResource( 3 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 35.0 ],
+"_edit_horizontal_guides_": [ 574.0 ],
 "_edit_vertical_guides_": [ 3496.0 ]
 }
 
