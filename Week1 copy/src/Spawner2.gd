@@ -31,4 +31,6 @@ func _on_SpawnTimer_timeout() -> void:
 	nextSpawnTime -= 0.2
 	nextSpawnTime = max(nextSpawnTime, MIN_SPAWN_TIME)
 	spawnTimer.start(nextSpawnTime)
-	
+
+func start_game():
+	var nextSpawnTime := 4.0

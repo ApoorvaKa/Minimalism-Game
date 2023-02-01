@@ -10,7 +10,6 @@ var preloadedEnemies := [
 var enemiesLoc := [
 	560, 150
 ]
-
 onready var spawnTimer := $SpawnTimer
 
 var nextSpawnTime := 4.0
@@ -33,4 +32,3 @@ func _on_SpawnTimer_timeout() -> void:
 	nextSpawnTime -= 0.1
 	nextSpawnTime = max(nextSpawnTime, MIN_SPAWN_TIME)
 	spawnTimer.start(nextSpawnTime)
-	
