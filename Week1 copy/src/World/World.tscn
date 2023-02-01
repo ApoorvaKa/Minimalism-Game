@@ -1,13 +1,9 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/tile.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Actors/Enemy2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/background.jpg" type="Texture" id=4]
-[ext_resource path="res://Assets/circle_1 copy.png" type="Texture" id=5]
-[ext_resource path="res://Assets/circle_2 copy.png" type="Texture" id=6]
-[ext_resource path="res://Assets/circle_3 copy.png" type="Texture" id=8]
-[ext_resource path="res://src/World/ParallaxBackground.gd" type="Script" id=9]
 [ext_resource path="res://src/Actors/Spawner.gd" type="Script" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
@@ -36,7 +32,6 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 80, 0, 80 )
 } ]
 0/z_index = 0
 1/name = "pink.jpg.webp 1"
-1/texture = ExtResource( 6 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 0, 560, 80, 80 )
@@ -72,79 +67,64 @@ expand = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="CanvasLayer"]
 scroll_limit_end = Vector2( 4000, 0 )
-script = ExtResource( 9 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
 
 [node name="first" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 1455, 414 )
 scale = Vector2( 0.29375, 0.30125 )
-texture = ExtResource( 5 )
 
 [node name="first2" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 138.75, 204.25 )
 scale = Vector2( 0.29375, 0.30125 )
-texture = ExtResource( 5 )
 
 [node name="first3" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 726, 396 )
 scale = Vector2( 0.29375, 0.30125 )
-texture = ExtResource( 5 )
 
 [node name="first4" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 1477, 381 )
 scale = Vector2( 0.29375, 0.30125 )
-texture = ExtResource( 5 )
 
 [node name="first5" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 2031, 190 )
 scale = Vector2( 0.29375, 0.30125 )
-texture = ExtResource( 5 )
 
 [node name="sec" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 74, 435 )
 scale = Vector2( 0.46, 0.466667 )
-texture = ExtResource( 8 )
 
 [node name="sec2" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 3891, 379 )
 scale = Vector2( 0.46, 0.466667 )
-texture = ExtResource( 8 )
 
 [node name="sec3" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 3048, 217 )
 scale = Vector2( 0.46, 0.466667 )
-texture = ExtResource( 8 )
 
 [node name="sec4" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 2400, 383 )
 scale = Vector2( 0.46, 0.466667 )
-texture = ExtResource( 8 )
 
 [node name="sec5" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 1025, 178 )
 scale = Vector2( 0.46, 0.466667 )
-texture = ExtResource( 8 )
 
 [node name="third" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 476, 271 )
 scale = Vector2( 0.855, 0.85 )
-texture = ExtResource( 8 )
 
 [node name="third2" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 3265, 423 )
 scale = Vector2( 0.855, 0.85 )
-texture = ExtResource( 8 )
 
 [node name="third3" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 2572, 182 )
 scale = Vector2( 0.855, 0.85 )
-texture = ExtResource( 8 )
 
 [node name="third4" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 3854, 309 )
 scale = Vector2( 0.855, 0.85 )
-texture = ExtResource( 8 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
