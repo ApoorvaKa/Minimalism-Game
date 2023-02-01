@@ -16,10 +16,10 @@ func start(pos):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	if Input.is_action_just_pressed("gravity_flip"):
-		if position.y > 500:
-			position.y = 73
+		if position.y > 400:
+			position.y = 95
 		else:
-			position.y = 532
+			position.y = 496
 	
 
 func _on_Area2D_body_entered(body):
