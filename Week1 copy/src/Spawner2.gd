@@ -17,7 +17,6 @@ var nextSpawnTime := 4.0
 
 func _ready():
 	randomize()
-	spawnTimer.start(nextSpawnTime)
 	
 func _on_SpawnTimer_timeout() -> void:
 	# Spawn an enemy
@@ -31,6 +30,3 @@ func _on_SpawnTimer_timeout() -> void:
 	nextSpawnTime -= 0.2
 	nextSpawnTime = max(nextSpawnTime, MIN_SPAWN_TIME)
 	spawnTimer.start(nextSpawnTime)
-
-func start_game():
-	var nextSpawnTime := 4.0
