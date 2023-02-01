@@ -6,10 +6,6 @@ var score
 func _ready():
 	pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
 func game_over():
 	$ScoreTimer.stop()
 	$HUD.show_game_over()
